@@ -1,5 +1,9 @@
 # af-web
 
+## Project screenshot
+
+![screenshot](https://github.com/octaviomuller/af-web/blob/main/src/assets/screenshot.png?raw=true)
+
 ## Project setup
 ```
 npm install
