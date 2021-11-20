@@ -1,6 +1,8 @@
 <template>
   <v-app-bar
     absolute
+    app
+    clipped-left
     color="white"
   >
     <v-toolbar-title>My Vue App</v-toolbar-title>

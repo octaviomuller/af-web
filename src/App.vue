@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <navigation-drawer></navigation-drawer>
+
     <app-bar></app-bar>
 
     <v-main>
@@ -10,12 +12,14 @@
 
 <script>
 import AppBar from './components/AppBar.vue'
+import NavigationDrawer from './components/NavigationDrawer.vue'
 
 export default {
   name: 'App',
 
   components: {
-    AppBar
+    AppBar,
+    NavigationDrawer
   },
 
   data: () => ({
