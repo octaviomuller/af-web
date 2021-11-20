@@ -1,17 +1,9 @@
 <template>
-  <v-navigation-drawer
-    absolute
-    bottom
-    app
-    clipped
-    permanent
-  >
+  <v-navigation-drawer absolute bottom app clipped permanent>
     <v-list>
       <v-list-item link class="pb-4">
         <v-list-item-content>
-          <v-list-item-title class="text-h6">
-            José Alencar
-          </v-list-item-title>
+          <v-list-item-title class="text-h6"> José Alencar </v-list-item-title>
           <v-list-item-subtitle>jose.alencar87@gmail.com</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -27,34 +19,34 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      items: [
-        {
-          icon: 'mdi-home',
-          title: 'Dashboard'
-        },
-        {
-          icon: 'mdi-chart-line',
-          title: 'Estatísticas'
-        },
-        {
-          icon: 'mdi-cash-multiple',
-          title: 'Pagamentos'
-        },
-        {
-          icon: 'mdi-bitcoin',
-          title: 'Investimentos'
-        },
-        {
-          icon: 'mdi-cog',
-          title: 'Ajustes'
-        },
-        {
-          icon: 'mdi-information',
-          title: 'Dúvidas'
-        },
-      ]
-    }),
-  }
+export default {
+  data: () => ({
+    items: [
+      {
+        icon: "mdi-home",
+        title: "Home",
+      },
+      {
+        icon: "mdi-chart-line",
+        title: "Estatísticas",
+      },
+      {
+        icon: "mdi-cash-multiple",
+        title: "Pagamentos",
+      },
+      {
+        icon: "mdi-bitcoin",
+        title: "Investimentos",
+      },
+      {
+        icon: "mdi-cog",
+        title: "Ajustes",
+      },
+      {
+        icon: "mdi-information",
+        title: "Dúvidas",
+      },
+    ],
+  }),
+};
 </script>
