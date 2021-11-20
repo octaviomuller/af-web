@@ -1,13 +1,15 @@
 <template>
   <v-app>
-    <system-bar></system-bar>
+    <SystemBar></SystemBar>
 
-    <navigation-drawer></navigation-drawer>
+    <AppBar></AppBar>
 
-    <app-bar></app-bar>
+    <NavigationDrawer></NavigationDrawer>
+
+    <Footer></Footer>
 
     <v-main>
-      <h1>Hello World</h1>
+      <Home></Home>
     </v-main>
   </v-app>
 </template>
@@ -16,6 +18,8 @@
 import AppBar from './components/AppBar.vue'
 import NavigationDrawer from './components/NavigationDrawer.vue'
 import SystemBar from './components/SystemBar.vue'
+import Footer from './components/Footer.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'App',
@@ -23,7 +27,9 @@ export default {
   components: {
     AppBar,
     NavigationDrawer,
-    SystemBar
+    SystemBar,
+    Footer,
+    Home
   },
 
   data: () => ({

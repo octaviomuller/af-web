@@ -3,13 +3,22 @@
     absolute
     bottom
     app
-    clipped-left
+    clipped
     permanent
   >
     <v-list>
+      <v-list-item link class="pb-4">
+        <v-list-item-content>
+          <v-list-item-title class="text-h6">
+            José Alencar
+          </v-list-item-title>
+          <v-list-item-subtitle>jose.alencar87@gmail.com</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
       <v-list-item link v-for="item in items" :key="item">
         <v-list-item-icon>
-          <v-icon>{{ item.icon }}</v-icon>
+          <v-icon color="orange darken-2">{{ item.icon }}</v-icon>
         </v-list-item-icon>
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
@@ -26,20 +35,24 @@
           title: 'Dashboard'
         },
         {
-          icon: 'mdi-account',
-          title: 'User'
+          icon: 'mdi-chart-line',
+          title: 'Estatísticas'
         },
         {
-          icon: 'mdi-view-list',
-          title: 'List'
+          icon: 'mdi-cash-multiple',
+          title: 'Pagamentos'
+        },
+        {
+          icon: 'mdi-bitcoin',
+          title: 'Investimentos'
         },
         {
           icon: 'mdi-cog',
-          title: 'Settings'
+          title: 'Ajustes'
         },
         {
           icon: 'mdi-information',
-          title: 'About Us'
+          title: 'Dúvidas'
         },
       ]
     }),

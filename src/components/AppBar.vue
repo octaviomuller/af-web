@@ -3,18 +3,23 @@
     absolute
     app
     clipped-left
-    color="white"
+    elevation="0"
+    color="orange darken-2"
   >
-    <v-toolbar-title>My Vue App</v-toolbar-title>
+    <v-img
+      contain
+      max-width="120"
+      src="../assets/logo_inter.png"
+    ></v-img>
 
     <v-spacer></v-spacer>
 
     <v-btn icon>
-      <v-icon>mdi-magnify</v-icon>
+      <v-icon color="white">mdi-magnify</v-icon>
     </v-btn>
 
     <v-btn icon>
-      <v-icon>mdi-dots-vertical</v-icon>
+      <v-icon color="white">mdi-dots-vertical</v-icon>
     </v-btn>
   </v-app-bar>
 </template>
