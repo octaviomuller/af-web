@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <system-bar></system-bar>
+
     <navigation-drawer></navigation-drawer>
 
     <app-bar></app-bar>
@@ -13,13 +15,15 @@
 <script>
 import AppBar from './components/AppBar.vue'
 import NavigationDrawer from './components/NavigationDrawer.vue'
+import SystemBar from './components/SystemBar.vue'
 
 export default {
   name: 'App',
 
   components: {
     AppBar,
-    NavigationDrawer
+    NavigationDrawer,
+    SystemBar
   },
 
   data: () => ({
