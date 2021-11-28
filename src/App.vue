@@ -8,8 +8,6 @@
 
     <Footer></Footer>
 
-    <BottomNavigation></BottomNavigation>
-
     <v-main>
       <Home></Home>
     </v-main>
@@ -19,9 +17,7 @@
 <script>
 import AppBar from "./components/AppBar.vue";
 import NavigationDrawer from "./components/NavigationDrawer.vue";
-import SystemBar from "./components/SystemBar.vue";
 import Footer from "./components/Footer.vue";
-import BottomNavigation from "./components/BottomNavagation.vue";
 import Home from "./components/Home.vue";
 
 export default {
@@ -30,9 +26,7 @@ export default {
   components: {
     AppBar,
     NavigationDrawer,
-    SystemBar,
     Footer,
-    BottomNavigation,
     Home,
   },
 
