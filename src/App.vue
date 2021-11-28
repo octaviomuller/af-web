@@ -9,7 +9,7 @@
     <Footer></Footer>
 
     <v-main>
-      <Home></Home>
+      <router-view />
     </v-main>
   </v-app>
 </template>
@@ -18,7 +18,6 @@
 import AppBar from "./components/AppBar.vue";
 import NavigationDrawer from "./components/NavigationDrawer.vue";
 import Footer from "./components/Footer.vue";
-import Home from "./components/Home.vue";
 
 export default {
   name: "App",
@@ -27,7 +26,6 @@ export default {
     AppBar,
     NavigationDrawer,
     Footer,
-    Home,
   },
 
   data: () => ({
