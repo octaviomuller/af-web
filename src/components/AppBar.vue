@@ -4,12 +4,20 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn icon>
-      <v-icon color="white">mdi-magnify</v-icon>
-    </v-btn>
-
-    <v-btn icon>
-      <v-icon color="white">mdi-dots-vertical</v-icon>
+    <v-btn icon v-for="page in pages" :key="page" @click="redirect(page.path)">
+      <v-icon color="white">{{ page.icon }}</v-icon>
     </v-btn>
   </v-app-bar>
 </template>
+
+<script>
+export default {
+  props: ['pages'],
+  methods: {
+    redirect(route) {
+      console.log(route)
+      this.$router.push(route)
+    }
+  }
+}
+</script>

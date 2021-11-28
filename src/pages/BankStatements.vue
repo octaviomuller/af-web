@@ -1,5 +1,5 @@
 <template>
   <v-content>
-    Home
+    Bank Statements
   </v-content>
 </template>

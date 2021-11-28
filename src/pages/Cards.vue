@@ -1,5 +1,5 @@
 <template>
   <v-content>
-    Home
+    Cards
   </v-content>
 </template>

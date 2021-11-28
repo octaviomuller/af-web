@@ -8,11 +8,11 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link v-for="item in items" :key="item">
+      <v-list-item link v-for="page in pages" :key="page" @click="redirect(page.path)">
         <v-list-item-icon>
-          <v-icon color="orange darken-2">{{ item.icon }}</v-icon>
+          <v-icon color="orange darken-2">{{ page.icon }}</v-icon>
         </v-list-item-icon>
-        <v-list-item-title>{{ item.title }}</v-list-item-title>
+        <v-list-item-title>{{ page.name }}</v-list-item-title>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
@@ -20,33 +20,12 @@
 
 <script>
 export default {
-  data: () => ({
-    items: [
-      {
-        icon: "mdi-home",
-        title: "Home",
-      },
-      {
-        icon: "mdi-chart-line",
-        title: "Estatísticas",
-      },
-      {
-        icon: "mdi-cash-multiple",
-        title: "Pagamentos",
-      },
-      {
-        icon: "mdi-bitcoin",
-        title: "Investimentos",
-      },
-      {
-        icon: "mdi-cog",
-        title: "Ajustes",
-      },
-      {
-        icon: "mdi-information",
-        title: "Dúvidas",
-      },
-    ],
-  }),
-};
+  props: ['pages'],
+  methods: {
+    redirect(route) {
+      console.log(route)
+      this.$router.push(route)
+    }
+  }
+}
 </script>

@@ -2,9 +2,9 @@
   <v-app>
     <SystemBar></SystemBar>
 
-    <AppBar></AppBar>
+    <AppBar :pages="pages"></AppBar>
 
-    <NavigationDrawer></NavigationDrawer>
+    <NavigationDrawer :pages="pages"></NavigationDrawer>
 
     <Footer></Footer>
 
@@ -29,7 +29,28 @@ export default {
   },
 
   data: () => ({
-    //
+    pages: [
+      {
+        name: 'Home',
+        path: '/',
+        icon: 'mdi-home'
+      },
+      {
+        name: 'Bank Statements',
+        path: '/statements',
+        icon: 'mdi-piggy-bank-outline'
+      },
+      {
+        name: 'Investments',
+        path: '/investments',
+        icon: 'mdi-chart-line'
+      },
+      {
+        name: 'Cards',
+        path: '/cards',
+        icon: 'mdi-credit-card-outline'
+      }
+    ]
   }),
 };
 </script>
