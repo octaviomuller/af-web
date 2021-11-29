@@ -8,7 +8,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link v-for="page in pages" :key="page" @click="redirect(page.path)">
+      <v-list-item link v-for="(page, index) in pages" :key="index" @click="redirect(page.path)">
         <v-list-item-icon>
           <v-icon color="orange darken-2">{{ page.icon }}</v-icon>
         </v-list-item-icon>

@@ -4,7 +4,7 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn icon v-for="page in pages" :key="page" @click="redirect(page.path)">
+    <v-btn icon v-for="(page, index) in pages" :key="index" @click="redirect(page.path)">
       <v-icon color="white">{{ page.icon }}</v-icon>
     </v-btn>
   </v-app-bar>

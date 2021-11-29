@@ -1,7 +1,5 @@
 <template>
   <v-app>
-    <SystemBar></SystemBar>
-
     <AppBar :pages="pages"></AppBar>
 
     <NavigationDrawer :pages="pages"></NavigationDrawer>
