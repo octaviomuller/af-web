@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer absolute bottom app clipped permanent>
+  <v-navigation-drawer clipped bottom app fixed permanent>
     <v-list>
       <v-list-item link class="pb-4">
         <v-list-item-content>

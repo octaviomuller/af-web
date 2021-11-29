@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar absolute app clipped-left elevation="0" color="orange darken-2">
+  <v-app-bar app clipped-left elevation="0" color="orange darken-2">
     <v-img contain max-width="120" src="../assets/logo_inter.png"></v-img>
 
     <v-spacer></v-spacer>

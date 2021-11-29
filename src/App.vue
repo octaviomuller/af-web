@@ -36,17 +36,17 @@ export default {
         icon: 'mdi-home'
       },
       {
-        name: 'Bank Statements',
+        name: 'Extrato',
         path: '/statements',
         icon: 'mdi-piggy-bank-outline'
       },
       {
-        name: 'Investments',
+        name: 'Investimentos',
         path: '/investments',
         icon: 'mdi-chart-line'
       },
       {
-        name: 'Cards',
+        name: 'Cartões',
         path: '/cards',
         icon: 'mdi-credit-card-outline'
       }
