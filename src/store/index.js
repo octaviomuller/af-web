@@ -55,8 +55,6 @@ export default new Vuex.Store({
         incoming: false
       }
     ],
-    investments: [],
-    cards: []
   },
   getters: {
       
